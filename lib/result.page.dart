@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quizapp/home_screen.dart';
+import 'package:quizapp/main.dart';
 
 class ResultPage extends StatefulWidget {
   final int result;
@@ -36,11 +38,10 @@ class _ResultPageState extends State<ResultPage> {
             SizedBox(
               height: 30,
             ),
-            // ElevatedButton(
-            //     onPressed: () {
-            //       Navigator.pop(context);
-            //     },
-            //     child: Text("Kembali"))
+             ElevatedButton(
+                 onPressed: () {
+                   Navigator.of(context).push(MaterialPageRoute(builder: (context)=> HomeScreen()));;},
+              child: Text("Kembali"))
           ],
         ),
       )),

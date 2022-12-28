@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quizapp/home_screen.dart';
 import 'package:quizapp/model/question_model.dart';
 import 'package:quizapp/result.page.dart';
 import 'package:quizapp/test_page.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.red),
-      home: HomePage(),
+      home: HomeScreen(),
     );
   }
 }
@@ -60,7 +61,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple,
+      backgroundColor: Color.fromARGB(255, 163, 17, 189),
       body: SafeArea(
           child: Center(
         child: Column(

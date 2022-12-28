@@ -52,7 +52,7 @@ class _TestPageState extends State<TestPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple[200],
+      backgroundColor: Color.fromARGB(255, 28, 115, 245),
       body: SingleChildScrollView(
         child: SafeArea(
             child: Column(
